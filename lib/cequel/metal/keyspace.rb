@@ -249,7 +249,7 @@ module Cequel
       def exists?
         statement = <<-CQL
           SELECT keyspace_name
-          FROM system.schema_keyspaces
+          FROM system_schema.keyspaces
           WHERE keyspace_name = ?
         CQL
 
